@@ -1,0 +1,20 @@
+{
+  "name": "clevox-csv",
+  "version": "0.0.1",
+  "description": "A simple microservice for csv file Upload and processing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clevox/clevox-csv.git"
+  },
+  "author": "ShahJada talukdar (Clevox)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clevox/clevox-csv/issues"
+  },
+  "homepage": "https://github.com/clevox/clevox-csv#readme"
+}
+

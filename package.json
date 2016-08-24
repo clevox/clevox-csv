@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/clevox/clevox-csv.git"
   },
+  "dependencies": {
+    "restify" : "4.0.4",
+    "mongodb": "2.1.18"
+  },
   "author": "ShahJada talukdar (Clevox)",
   "license": "MIT",
   "bugs": {

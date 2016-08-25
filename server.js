@@ -6,5 +6,7 @@ var server = restify.createServer();
 
 server.use(restify.bodyParser());
 
+require('./routes')(server);
+
 
 server.listen(port, function () { console.log('Listening on ' + server.address().port) });

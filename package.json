@@ -11,9 +11,8 @@
     "url": "git+https://github.com/clevox/clevox-csv.git"
   },
   "dependencies": {
-    "restify" : "4.0.4",
-    "formidable": "^1.0.17",
-    "mongodb": "2.1.18"
+    "express" : "^4.14.0",
+    "formidable": "^1.0.17"
   },
   "author": "ShahJada talukdar (Clevox)",
   "license": "MIT",

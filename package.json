@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "express" : "^4.14.0",
-    "formidable": "^1.0.17"
+    "formidable": "^1.0.17",
+    "cors" : "^2.8.0"
   },
   "author": "ShahJada talukdar (Clevox)",
   "license": "MIT",

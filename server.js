@@ -1,12 +1,14 @@
-var restify = require('restify');
+var express = require('express');
+var app = express();
+var path = require('path');
+var formidable = require('formidable');
+var fs = require('fs');
 
 var port = 5001;
 
-var server = restify.createServer();
-
-server.use(restify.bodyParser());
-
-require('./routes')(server);
+require('./routes')(app);
 
 
-server.listen(port, function () { console.log('Listening on ' + server.address().port) });
+app.listen(port, function () {
+  console.log('Listening on ' + port)
+});

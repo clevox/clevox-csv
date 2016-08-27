@@ -3,12 +3,19 @@ var formidable = require('formidable');
 var fs = require('fs');
 var uploadDir = path.join(path.dirname(require.main.filename), '/uploads');
 
+function setupForm(form) {
+  form.type = 'multipart';
+  form.multiples = true;
+  form.maxFieldsSize = 52428800;
+  form.uploadDir = uploadDir;
+  form.keepExtensions = true;
+}
+
 var upload = function (req, res) {
 
   var form = new formidable.IncomingForm();
-  
-  form.multiples = true;
-  form.uploadDir = uploadDir;
+      
+  setupForm(form);
   console.log(uploadDir);
 
   form.on('file', function(field, file) {
